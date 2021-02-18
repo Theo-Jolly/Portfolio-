@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>title</title>
+    <style>
+    	.contenant {
+    		display: grid;
+    		grid-template-columns: repeat(5, 1fr);
+    		grid-template-rows: 40vh 40vh 20vh;
+    	}
+
+        .brune {
+        	background-color: brown; 
+        	grid-column: 1/ 4 ;
+        	grid-row: 1/ 3;
+        }
+
+        .rose {
+        	background-color: pink; 
+        }
+
+        .rouge {
+        	background-color: red; 
+        }
+
+        .vert {
+        	background-color: green; 
+        	grid-column: 4/ 6;
+        }
+
+        .gris {
+        	background-color: gray; 
+        	grid-column: 1/ 6;
+        	grid-row: 3/ 4;
+        }
+
+	 </style>
+  </head>
+  <body>
+   <div class="contenant">
+       <div class="brune">a</div>
+       <div class="rose">b</div>
+       <div class="rouge">c</div>
+       <div class="vert">d</div>
+       <div class="gris">e</div>      
+   </div>
+
+  </body>
+ </html>   

@@ -1,58 +1,113 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
+    <link href="https://fonts.googleapis.com/css2?family=Piazzolla:ital,wght@0,200;1,100&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <title> portfolio théo jolly / expert numérique </title>
-    <style> 
-      h1{
-        color:green;
-      }
-    </style>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-  </head>
-  <body>
-  <header><nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="index.html">Mon site web</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="https://fr.linkedin.com/in/theo-jolly-72134414a">CV</a>
-      </li>
-    </ul>
-  </div>
-</nav>
-</header>
+   <style>
 
-      <h1>Théo JOLLY </h1>
+   h1{
+    font-family: 'Piazzolla', serif;
+    font-size:38px;
+    color:#87CEEB;
+    text-align: center;
+}
+    .titre{
+      border:solid;
+      text-align: center;
+    }
+    .info {
+    font-family: 'Piazzolla', serif;
+    }
+
+.parcours{
+  display: grid;
+  grid-template-columns: repeat(3;1fr);
+  grid-row: repeat(1,100vh);
+  grid-gap:1em;
+}
+
+.presentationparcours{
+grid-column: 1 / 2;
+grid-row: 1;
+margin-left:5em;
+  margin-right: 5em;
+}
+
+.presentationentreprise{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-left:5em;
+  margin-right: 5em;
+  grid-column: 2 / 3;
+  grid-row: 1;
+}
+
+h2{
+  text-align: center;
+  font-family: 'Piazzolla', serif;
+}
+
+p{
+  font-family: 'Piazzolla', serif;
+}
+
+.button{
+  padding:1em;
+  font-size:14px;
+  border-radius: 0.8em;
+  border-style:none;
+  background-color: #87CEEB;
+  font-family: 'Piazzolla', serif;
+  }
+
+.etudiant{
+  font-size:25px;
+}
+
+</style>
+    <body>
+      <div class="titre"><h1>Théo JOLLY </h1>
+   <p class="etudiant"><strong>Etudiant E-Business</strong></p>
+   <p> My Digital School - Nantes</p></div>
+
+   <section class="parcours">
+   <div class="presentationparcours"> 
+   <h2> Mon Parcours </h2>
+
+      <p class="info"> A l'obtention de mon Bac Scientifique en 2012, j'ai décidé de m'orienter en Faculté de Sport à Nantes.
+      Cela ne m'a pas réussi, j'ai donc décidé de travailler pendant 2 ans.
+      Souhaitant quand même obtenir un diplôme, je me suis dirigé vers un BTS MUC en alternance, à Bordeaux.
+      J'ai travaillé en tant qu'animateur La Poste Mobile (Vendeur - Formateur - Gestion SAV). 
+      Ayant effectué une formation commerciale en 2 ans, j'ai souhaité de me former aux métiers du numérique en 3ème année.
+      J'ai alors intégré My Digital School en B3 E-Business.
+      Je suis désormais en alternance chez Mood Conseil en tant que Business Developer Innovation.
+      Mon projet pour l'année prochaine est de poursuivre mes études en Master.
+
+       </p>
+      <button class="button">  <a href="https://fr.linkedin.com/in/theo-jolly-72134414a">Mon CV</a></button></div>
+      <br>
+      <br>
+
+      <div class="presentationentreprise"><h2> Mon entreprise </h2>
     
-      <img src="https://images.unsplash.com/photo-1503803548695-c2a7b4a5b875?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=60" alt="..." width="250"> 
-  
+      <p> Mood Conseil est une société de conseil créée il y a 4 ans. Nous accompagnons les entreprises du numérique / digital dans le financement de leurs projets innovants.
+      Plus précisement nous prenons en charge les dossiers de Crédit d'Impôt Recherche, Crédit d'Impôt Innovation, entre autres, pour nos clients.
+      L'entreprise a été créée par ses 3 fondateurs en 2017. Son développement est en forte croissance, l'effectif est passé de 5 en 2019 à 15 en 2020.
+       </p>
 
-      <h2> Mon expertise </h2>
-      <br>
-      <p> Je travaille dans le financement de l'innovation numérique.</p>
-      <p> Je suis business developer pour Mood Conseil.
-      On accompagne nos clients dans la réalisation des dossiers CIR/CII/JEI. </p>
-      
-      <a href="https://mood-conseil.fr/">En savoir plus </a>
+       <img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="..." width="250">
+       <br 
+       <br>
+
+      <button class="button"><a href="https://mood-conseil.fr/">Visiter notre site internet</a> </button></div></section>
        <br>
        <br>
-      <h3> Mon experience </h3>
-      <br>
-      <p> J'ai effectué un BTS MUC en alternance. </p>
-      <p>J'ai travaillé en tant qu'animateur La Poste Mobile (Vendeur - Formateur - Gestion SAV).  </p>
-      <p> Je suis désormais en alternance dans le financement de projets numérique.
-  
-     
 
   </body>
-</html>
+</html> 
+<div align=center>
